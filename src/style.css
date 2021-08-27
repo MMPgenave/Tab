@@ -39,7 +39,7 @@ h1 {
 }
 
 .singleBtn {
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-size: 40px;
   background-color: aquamarine;
 
