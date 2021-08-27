@@ -1,0 +1,55 @@
+body {
+  background-color: aquamarine;
+}
+
+h1 {
+  text-align: center;
+
+  font-size: 50px;
+}
+
+.underline {
+  background-color: rgb(255, 0, 76);
+  text-align: center;
+  border: 10px solid red;
+}
+
+.container {
+  height: 500px;
+  display: grid;
+  padding: 9px;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr;
+}
+
+.leftDiv {
+  text-align: center;
+  grid-column: 1/2;
+}
+
+.rightDiv {
+  text-align: center;
+  grid-column: 2/3;
+}
+
+.btn_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.singleBtn {
+  text-transform: uppercase;
+  font-size: 40px;
+  background-color: aquamarine;
+
+  border: none;
+  margin: 0 0.5rem;
+  padding: 0.25rem 0;
+}
+
+.singleBtn:hover {
+  color: rgb(18, 95, 184);
+
+  border-left: 3px solid rgb(18, 95, 184);
+}
