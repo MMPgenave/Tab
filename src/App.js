@@ -3,11 +3,14 @@ import React from "react";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import Tommy from "./tommy";
+import Bigdrop from "./bigdrop";
+import Cuker from './cuker';
 
 const url = "https://course-api.com/react-tabs-project";
 function App() {
   const [isLoading, setIsloading] = useState(true);
   const [data, setData] = useState([]);
+  const [name, setName] = useState("tommy");
 
   useEffect(() => {
     axios
@@ -34,19 +37,33 @@ function App() {
       <div className="container">
         <div className="leftDiv">
           <div className="btn_container">
-            <button type="button" className="singleBtn">
+            <button
+              type="button"
+              className="singleBtn"
+              onClick={() => setName((prevValue) => "tommy")}
+            >
               toomy
             </button>
-            <button type="button" className="singleBtn">
+            <button
+              type="button"
+              className="singleBtn"
+              onClick={() => setName((prevValue) => "bigdrop")}
+            >
               bigdrop
             </button>
-            <button type="button" className="singleBtn">
+            <button
+              type="button"
+              className="singleBtn"
+              onClick={() => setName((prevValue) => "cuker")}
+            >
               cuker
             </button>
           </div>
         </div>
         <div className="rightDiv">
-          <Tommy info={data} />
+          {name === "tommy" ? <Tommy info={data} /> : <h4></h4>}
+          {name === "bigdrop" ? <Bigdrop info={data} /> : <h4></h4>}
+          {name === "cuker" ? <Cuker info={data} /> : <h4></h4>}
         </div>
       </div>
     </div>

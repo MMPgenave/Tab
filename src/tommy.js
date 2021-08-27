@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 const Tommy = (prop) => {
   console.log(`the tommy prop  0 is ${prop.info[0]}`);
 
-  const [dar, setValue] = useState({});
+  const [value, setValue] = useState({});
 
  
 
@@ -22,7 +22,7 @@ const Tommy = (prop) => {
 
   return (
     <div>
-      <h1>{dar.title}</h1>
+      <h1>{value.title}</h1>
     </div>
   );
 };
