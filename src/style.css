@@ -28,7 +28,8 @@ h1 {
 }
 
 .rightDiv {
-  text-align: center;
+   
+  text-align: left;
   grid-column: 2/3;
 }
 
@@ -36,11 +37,12 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  margin-top: 40px;
 }
 
 .singleBtn {
   text-transform: uppercase;
-  font-size: 40px;
+  font-size: 30px;
   background-color: aquamarine;
 
   border: none;
@@ -52,4 +54,39 @@ h1 {
   color: rgb(18, 95, 184);
 
   border-left: 3px solid rgb(18, 95, 184);
+}
+
+.activeBtn {
+  text-transform: uppercase;
+  font-size: 30px;
+  background-color: aquamarine;
+
+  border: none;
+  margin: 0 0.5rem;
+  padding: 0.25rem 0;
+
+  color: rgb(18, 95, 184);
+
+  border-left: 3px solid rgb(18, 95, 184);
+}
+
+.title {
+  text-transform: capitalize;
+  text-align: left;
+  font-size: 40px;
+  color: rgb(10, 10, 53);
+}
+
+.companyName {
+  background-color: rgb(105, 207, 233);
+  border-radius: 3%;
+  font-size: 30px;
+  width: 150px;
+  text-align: center;
+}
+
+.date {
+  font-size: 25px;
+  color: rgb(23, 141, 141);
+
 }

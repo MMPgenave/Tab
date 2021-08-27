@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import Tommy from "./tommy";
 import Bigdrop from "./bigdrop";
-import Cuker from './cuker';
+import Cuker from "./cuker";
 
 const url = "https://course-api.com/react-tabs-project";
 function App() {
@@ -39,21 +39,21 @@ function App() {
           <div className="btn_container">
             <button
               type="button"
-              className="singleBtn"
+              className={name === "tommy" ? "activeBtn" : "singleBtn"}
               onClick={() => setName((prevValue) => "tommy")}
             >
-              toomy
+              tommy
             </button>
             <button
               type="button"
-              className="singleBtn"
+              className={name === "bigdrop" ? "activeBtn" : "singleBtn"}
               onClick={() => setName((prevValue) => "bigdrop")}
             >
               bigdrop
             </button>
             <button
               type="button"
-              className="singleBtn"
+              className={name === "cuker" ? "activeBtn" : "singleBtn"}
               onClick={() => setName((prevValue) => "cuker")}
             >
               cuker

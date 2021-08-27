@@ -1,12 +1,12 @@
 import React from "react";
 import { useState, useEffect } from "react";
 
+
+
 const Tommy = (prop) => {
   console.log(`the tommy prop  0 is ${prop.info[0]}`);
 
   const [value, setValue] = useState({});
-
- 
 
   useEffect(() => {
     let filteredData = {};
@@ -22,7 +22,10 @@ const Tommy = (prop) => {
 
   return (
     <div>
-      <h1>{value.title}</h1>
+      <p className="title">{value.title}</p>
+      <p className="companyName">{value.company}</p>
+      <p className="date">{value.dates}</p>
+      
     </div>
   );
 };

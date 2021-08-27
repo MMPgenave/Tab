@@ -18,7 +18,9 @@ const Cuker = (prop) => {
 
   return (
     <div>
-      <h1>{value.title}</h1>
+      <p className="title">{value.title}</p>
+      <p className="companyName">{value.company}</p>
+      <p className="date">{value.dates}</p>
     </div>
   );
 };
