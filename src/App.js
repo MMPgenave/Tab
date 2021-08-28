@@ -33,7 +33,7 @@ function App() {
   return (
     <div>
       <h1>Experience</h1>
-      {/*  <div className="underline"></div>  */}
+        <div className="underline"></div>  
       <div className="container">
         <div className="leftDiv">
           <div className="btn_container">
